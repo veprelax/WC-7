@@ -58,7 +58,7 @@ To configure `cron`, follow these steps:
 
 To automate the backup process, a bash script was created. The following steps outline the creation and configuration of the backup script:
 
-![image](https://github.com/user-attachments/assets/cf63acc1-1c43-4054-a485-fd4b16ffeac9)
+![image](https://github.com/user-attachments/assets/77ee8799-548e-4202-9c76-240a76eeff65)
 
 ### Step 1: Create the Script Directory
 
@@ -116,6 +116,8 @@ ls -lh "$HOME/backups"
 ## 2. Scheduling Tasks with Crontab
 
 ![image](https://github.com/user-attachments/assets/43c5f6f5-7371-44a7-8107-6c969715294b)
+![image](https://github.com/user-attachments/assets/b282e9fd-718f-4b04-a472-dc8867ded5be)
+
 
 To automate the execution of the backup script, several cron jobs were scheduled using `crontab`.
 
@@ -191,7 +193,7 @@ crontab -l
 ```
 
 ## 3. Alternative: Systemd Timer
-![image](https://github.com/user-attachments/assets/b969e669-892a-4f9f-9735-be3ea7f2734f)
+![image](https://github.com/user-attachments/assets/4052e2f5-87cf-4e4b-baee-ec85c936193e)
 
 An alternative to using `cron` for scheduling tasks is to use `systemd` timers. The following steps outline the creation and activation of a systemd timer for the backup script.
 
